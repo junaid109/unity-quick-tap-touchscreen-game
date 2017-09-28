@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1195115358549686}
+  m_IsPrefabParent: 1
+--- !u!1 &1195115358549686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4923154583326964}
+  - component: {fileID: 114724073714974612}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4923154583326964
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1195115358549686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114724073714974612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1195115358549686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3585bb988446518469c870f5ffa17df1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObjectSpeed: 15
+  quickChance: 0
+  helmetChance: 0
+  startDelay: 1
+  readyGoEffect: {fileID: 0}
+  timeLeft: 50
+  timeText: {fileID: 0}
+  targets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  maximumTargets: 12
+  showDelay: 0.4
+  hideDelay: 0.4
+  attackButton: Fire1
+  hitTargetBonus: 10
+  bonusEffect: {fileID: 22485230, guid: 642b0c8354a4ebc498297ba7aebd3923, type: 2}
+  score: 0
+  scoreText: {fileID: 0}
+  levels:
+  - scoreToNextLevel: 2147483647
+    timeBonus: 0
+    maximumTargets: 3
+  currentLevel: 0
+  isEndless: 0
+  gameCanvas: {fileID: 0}
+  progressCanvas: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  gameOverCanvas: {fileID: 0}
+  victoryCanvas: {fileID: 0}
+  mainMenuLevelName: GA_Game
+  soundLevelUp: {fileID: 8300000, guid: 2294e95fa72e9db4199987b3f6466b8f, type: 3}
+  soundGameOver: {fileID: 8300000, guid: c1b6d1fcfb8c5fa438d171558095b9ec, type: 3}
+  soundVictory: {fileID: 8300000, guid: 368077faa131f8e489f5f39e4d5c7688, type: 3}
+  soundSourceTag: Sound
+  confirmButton: Submit
+  pauseButton: Cancel

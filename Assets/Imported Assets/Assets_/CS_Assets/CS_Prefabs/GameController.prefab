@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11403226}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11403226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bbd673ec5a2d94d987ac6510b9adcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObjectSpeed: 15
+  quickChance: 0.05
+  helmetChance: 0.05
+  startDelay: 1
+  readyGoEffect: {fileID: 22485230, guid: c2e371506ce250247b0eab9a06045a66, type: 2}
+  timeLeft: 30
+  timeText: {fileID: 0}
+  moles: []
+  maximumTargets: 6
+  showDelay: 3
+  hideDelay: 2
+  attackButton: Fire1
+  hitTargetBonus: 10
+  bonusEffect: {fileID: 22485230, guid: 642b0c8354a4ebc498297ba7aebd3923, type: 2}
+  score: 0
+  scoreText: {fileID: 0}
+  levels:
+  - scoreToNextLevel: 100
+    timeBonus: 0
+    maximumTargets: 3
+  - scoreToNextLevel: 300
+    timeBonus: 3
+    maximumTargets: 4
+  - scoreToNextLevel: 600
+    timeBonus: 4
+    maximumTargets: 6
+  - scoreToNextLevel: 1000
+    timeBonus: 5
+    maximumTargets: 6
+  - scoreToNextLevel: 1500
+    timeBonus: 6
+    maximumTargets: 7
+  - scoreToNextLevel: 2000
+    timeBonus: 7
+    maximumTargets: 8
+  - scoreToNextLevel: 3000
+    timeBonus: 8
+    maximumTargets: 9
+  - scoreToNextLevel: 4000
+    timeBonus: 10
+    maximumTargets: 10
+  - scoreToNextLevel: 6000
+    timeBonus: 12
+    maximumTargets: 11
+  - scoreToNextLevel: 8000
+    timeBonus: 14
+    maximumTargets: 12
+  - scoreToNextLevel: 10000
+    timeBonus: 16
+    maximumTargets: 13
+  - scoreToNextLevel: 12000
+    timeBonus: 18
+    maximumTargets: 14
+  - scoreToNextLevel: 14000
+    timeBonus: 20
+    maximumTargets: 16
+  - scoreToNextLevel: 17000
+    timeBonus: 25
+    maximumTargets: 18
+  - scoreToNextLevel: 20000
+    timeBonus: 30
+    maximumTargets: 20
+  - scoreToNextLevel: 25000
+    timeBonus: 40
+    maximumTargets: 20
+  - scoreToNextLevel: 30000
+    timeBonus: 50
+    maximumTargets: 20
+  - scoreToNextLevel: 40000
+    timeBonus: 60
+    maximumTargets: 20
+  currentLevel: 0
+  isEndless: 0
+  gameCanvas: {fileID: 22400002, guid: 3439111f790b5e745952f023ecef8113, type: 2}
+  progressCanvas: {fileID: 0}
+  pauseCanvas: {fileID: 0}
+  gameOverCanvas: {fileID: 22400004, guid: ed8d286778ac8034ba195497051ed0a0, type: 2}
+  victoryCanvas: {fileID: 22447048, guid: 26e400fa09c3de740a8489b39633134b, type: 2}
+  mainMenuLevelName: CS_StartMenu
+  soundLevelUp: {fileID: 8300000, guid: 2294e95fa72e9db4199987b3f6466b8f, type: 3}
+  soundGameOver: {fileID: 8300000, guid: c1b6d1fcfb8c5fa438d171558095b9ec, type: 3}
+  soundVictory: {fileID: 8300000, guid: 29414d872878c4544922d3a6d62cf537, type: 3}
+  soundSourceTag: Sound
+  confirmButton: Submit
+  pauseButton: Cancel
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

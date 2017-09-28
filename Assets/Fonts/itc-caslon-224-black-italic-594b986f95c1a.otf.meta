@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 40c7f2077f2d9d84fb3899a754510209
+timeCreated: 1498556639
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ITC Caslon 224 Black
+  fontNames:
+  - ITC Caslon 224 Black
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 32d8ce3425c8ce54d846a43ddfe79b7c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
